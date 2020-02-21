@@ -4,21 +4,6 @@ h1, .h1 {
     color: $color-black;
     margin-top: 0;
     margin-bottom: $grid-unit*2;
-
-    @media (min-width: $tablet) {
-        font-size: 36px;
-        line-height: $grid-unit*5;
-        margin-bottom: $grid-unit*4;
-    }
-
-    @media (min-width: $desktop) {
-        font-size: 60px;
-        line-height: $grid-unit*8;
-    }
-
-    @media (min-width: $hd) {
-        margin-bottom: $grid-unit*6;
-    }
 }
 
 h2, .h2 {
@@ -29,18 +14,7 @@ h2, .h2 {
     margin-bottom: $grid-unit;
     letter-spacing: 0.33px;
 
-    @media (min-width: $tablet) {
-        font-size: 30px;
-        line-height: $grid-unit*4;
-        letter-spacing: 0.38px;
-    }
 
-    @media (min-width: $desktop) {
-        font-size: 48px;
-        line-height: $grid-unit*6;
-        letter-spacing: 0.61px;
-        margin-bottom: $grid-unit*2;
-    }
 }
 
 h3, .h3 {
@@ -51,17 +25,7 @@ h3, .h3 {
     margin-bottom: $grid-unit;
     letter-spacing: 0.25px;
 
-    @media (min-width: $tablet) {
-        font-size: 22px;
-        line-height: $grid-unit*4;
-        letter-spacing: 0.28px;
-    }
 
-    @media (min-width: $desktop) {
-        font-size: 34px;
-        line-height: $grid-unit*5;
-        letter-spacing: 0.43px;
-    }
 }
 
 h4, .h4 {
@@ -72,16 +36,7 @@ h4, .h4 {
     margin-bottom: $grid-unit;
     letter-spacing: 0.23px;
 
-    @media (min-width: $tablet) {
-        font-size: 18px;
-        line-height: $grid-unit*3;
-    }
 
-    @media (min-width: $desktop) {
-        font-size: 22px;
-        line-height: $grid-unit*4;
-        letter-spacing: 0.28px;
-    }
 }
 
 h5, .h5 {
@@ -91,17 +46,7 @@ h5, .h5 {
     margin-top: 0;
     margin-bottom: $grid-unit;
 
-    @media (min-width: $tablet) {
-        font-size: 16px;
-        line-height: $grid-unit*3;
-        letter-spacing: 0.2px;
-    }
 
-    @media (min-width: $desktop) {
-        font-size: 18px;
-        line-height: $grid-unit*4;
-        letter-spacing: 0.23px;
-    }
 }
 
 h6, .h6 {
@@ -111,9 +56,7 @@ h6, .h6 {
     margin-top: 0;
     margin-bottom: $grid-unit;
 
-    @media (min-width: $desktop) {
-        line-height: $grid-unit*3;
-    }
+
 }
 
 .slogan {
@@ -125,10 +68,6 @@ h6, .h6 {
     margin-bottom: $grid-unit;
     letter-spacing: 0.25px;
 
-    @media (min-width: $desktop) {
-        font-size: 21px;
-        letter-spacing: 0.27px;
-    }
 }
 
 table {
@@ -137,10 +76,6 @@ table {
     display: block;
     overflow-x: scroll;
 
-    @media (min-width: $tablet) {
-        display: table;
-        overflow: hidden;
-    }
 
     tr {
         vertical-align: top;
@@ -177,9 +112,7 @@ table {
             background: #FFF;
         }
 
-        tr:nth-child(odd) {
-            background: $color-wildSand;
-        }
+
     }
 }
 
@@ -288,11 +221,11 @@ p {
 }
 
 a {
-    color: $color-limedOak;
+
     line-height: 20px;
-    transition: $speed ease-in-out;
+
 
     &:hover, &:focus {
-        color: $color-pottersClay;
+
     }
 }

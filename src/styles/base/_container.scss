@@ -1,26 +1,17 @@
 .container-fluid {
-    width: 100%;
-    margin-right: auto;
-    margin-left: auto;
+    @include container-fluid;
 }
 
 .container {
-    padding: 0 $grid-unit*3;
-    margin-right: auto;
-    margin-left: auto;
-    width: 320px;
+    @include container;
+}
 
-    @media (min-width: $tablet) {
-        width: 720px;
-    }
+.row {
+    @include row;
+}
 
-    @media (min-width: $desktop) and (max-width: $hd - 1px) {
-        width: 1184px;
-    }
+.col-1 {
 
-    @media (min-width: $hd) {
-        width: 1848px;
-    }
 }
 
 .overlay {

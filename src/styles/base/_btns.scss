@@ -1,9 +1,13 @@
-.btn {
+.button {
     position: relative;
     display: inline-block;
+    font-size: 16px;
+    line-height: $grid-unit*3;
+    padding: 13px 24px;
+    text-align: center;
     text-decoration: none;
     border: 0;
-    transition: $speed ease-in-out;
+    transition: $transition;
     cursor: pointer;
 
     &[disabled] {
@@ -11,51 +15,51 @@
         opacity: 0.5;
     }
 
+    &-round {
+        border-radius: 50px;
+    }
+
     &-block {
         display: block;
         width: 100%;
-
-        @media (min-width: $ms) {
-            width: 270px;
-        }
     }
 
-    &-limedOak {
-        line-height: $grid-unit*2;
-        padding: 12px;
-        margin-left: $grid-unit*2;
-        text-align: center;
+    &-pink {
         color: $color-white;
-        background-color: $color-limedOak;
-
-        @media (min-width: $tablet + 1px) {
-            padding: $grid-unit*2;
-        }
+        background-color: $color-razzmatazz;
+        transition: $transition;
 
         &:hover, &:focus {
             color: $color-white;
-            background-color: $color-pottersClay;
+            background-color: $color-crimson;
         }
     }
 
-    &-border {
-        line-height: 16px;
-        padding: 11px;
-        margin-left: $grid-unit*2;
-        text-align: center;
-        text-decoration: none;
-        color: $color-pottersClay;
-        background-color: $color-white;
-        border: 1px solid $color-limedOak;
-        transition: $speed ease-in-out;
-
-        @media (min-width: $tablet + 1px) {
-            padding: 15px;
-        }
+    &-blue {
+        color: $color-white;
+        background-color: $color-royalBlue;
+        transition: $transition;
 
         &:hover, &:focus {
             color: $color-white;
-            background-color: $color-limedOak;
+            background-color: $color-astronaut;
+        }
+    }
+
+    &-mail {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+
+        &:before {
+            content:'';
+            display: block;
+            width: 16px;
+            height: 16px;
+            background-image: url('dist/img/sprites/sprite.svg#ico_mail');
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
         }
     }
 }

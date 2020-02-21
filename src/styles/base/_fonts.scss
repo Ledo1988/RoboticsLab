@@ -5,7 +5,7 @@ $path: '/dist/fonts/';
   font-style: normal;
   font-weight: normal;
   src: url($path + 'OpenSans-Regular.woff2') format("woff2"),
-       url($path + 'OpenSans-Regular.woff') format("woff");
+       url($path + 'OpenSans-Regular.woff') format("woff"),
        url($path + 'OpenSans-Regular.ttf') format("truetype");
 }
 
@@ -14,7 +14,7 @@ $path: '/dist/fonts/';
   font-style: normal;
   font-weight: 600;
   src: url($path + 'OpenSans-Semibold.woff2') format("woff2"),
-       url($path + 'OpenSans-Semibold.woff') format("woff");
+       url($path + 'OpenSans-Semibold.woff') format("woff"),
        url($path + 'OpenSans-Semibold.ttf') format("truetype");
 }
 
@@ -23,6 +23,6 @@ $path: '/dist/fonts/';
   font-style: normal;
   font-weight: bold;
   src: url($path + 'Muller-Bold.woff2') format("woff2"),
-       url($path + 'Muller-Bold.woff') format("woff");
+       url($path + 'Muller-Bold.woff') format("woff"),
        url($path + 'Muller-Bold.ttf') format("truetype");
 }
