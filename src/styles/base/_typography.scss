@@ -125,8 +125,4 @@ a {
     color: $color-primary;
   text-decoration: none;
     transition: $transition;
-
-    &:hover, &:focus {
-       color: $color-black;
-    }
 }

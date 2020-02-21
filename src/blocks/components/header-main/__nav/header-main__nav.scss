@@ -19,5 +19,9 @@
     &-link {
         font-size: 16px;
         line-height: $grid-unit*3;
+
+        &:hover, &:focus {
+            color: $color-black;
+        }
     }
 }

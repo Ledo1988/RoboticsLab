@@ -11,23 +11,7 @@
         justify-content: flex-start;
     }
     &--wrapper {
-        width: 100%;
-        max-width: 1248px;
-        padding: 0 $grid-unit*2;
-        margin-right: auto;
-        margin-left: auto;
+        @include container-md;
         margin-bottom: $grid-unit*10;
-
-        @media (max-width: $xl - 1px) and (min-width: $l) {
-            max-width: 928px;
-        }
-
-        @media (max-width: $l - 1px) and (min-width: $md) {
-            max-width: 640px;
-        }
-
-        @media (max-width: $md - 1px) and (min-width: $s) {
-            max-width: 288px;
-        }
     }
 }

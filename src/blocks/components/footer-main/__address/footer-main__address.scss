@@ -1,0 +1,29 @@
+.footer-main__address {
+    width: $grid-unit*35;
+    font-size: 13px;
+    line-height: $grid-unit*3;
+    color: $color-white;
+    margin-bottom: $grid-unit*3;
+
+    &-location {
+        opacity: 0.5;
+    }
+
+    &-link--wrapper {
+        span {
+            opacity: 0.5;
+        }
+    }
+
+    &-link {
+        display: inline-block;
+        font-size: 13px;
+        line-height: $grid-unit*3;
+        color: $color-white;
+        opacity: 0.5;
+
+        &:hover, &:focus {
+            opacity: 0.8;
+        }
+    }
+}

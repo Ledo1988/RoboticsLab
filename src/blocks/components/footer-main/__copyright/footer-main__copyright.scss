@@ -1,0 +1,13 @@
+.footer-main__copyright {
+    flex-shrink: 0;
+
+    &-info {
+        @include noSelect;
+        font-size: 13px;
+        line-height: 24px;
+        letter-spacing: -0.507px;
+        color: #ffffff;
+        mix-blend-mode: normal;
+        opacity: 0.5;
+    }
+}

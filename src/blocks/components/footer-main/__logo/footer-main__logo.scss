@@ -1,0 +1,10 @@
+.footer-main__logo {
+    width: 304px;
+    height: 32px;
+    margin-bottom: $grid-unit*3;
+
+    &-link {
+        display: block;
+        line-height: 1;
+    }
+}
