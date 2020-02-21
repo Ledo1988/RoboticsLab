@@ -2,12 +2,17 @@
 - var newsDate;
 - var newsDesc;
 
-.news-item
-	.news-item__img
-		img(src=newsSrc width="384" height="224" alt="Изображение")
-	.news-item__info
-		.news-item__date #{newsDate}
-		.news-item__social
-			a.news-item__social-link.news-item__social-link-vk(href="#")
-				span Вконтакте
-	.news-item__desc #{newsDesc}
+.news-item--wrapper
+	.news-item
+		a.news-item__img-link(href="#")
+			img(src=newsSrc width="384" height="224" alt="Изображение")
+		.news-item__content
+			.news-item__info
+				.news-item__date #{newsDate}
+				.news-item__social
+					a.news-item__social-link(href="#")
+						span.news-item__social-link-icon
+							svg(class="icon")
+								use(xlink:href="/img/sprites/sprite.svg#ico_social-vk")
+						span.news-item__social-link-title Вконтакте
+			.news-item__desc #{newsDesc}
