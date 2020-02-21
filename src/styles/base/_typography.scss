@@ -1,0 +1,298 @@
+h1, .h1 {
+    font-size: 30px;
+    line-height: $grid-unit*4;
+    color: $color-black;
+    margin-top: 0;
+    margin-bottom: $grid-unit*2;
+
+    @media (min-width: $tablet) {
+        font-size: 36px;
+        line-height: $grid-unit*5;
+        margin-bottom: $grid-unit*4;
+    }
+
+    @media (min-width: $desktop) {
+        font-size: 60px;
+        line-height: $grid-unit*8;
+    }
+
+    @media (min-width: $hd) {
+        margin-bottom: $grid-unit*6;
+    }
+}
+
+h2, .h2 {
+    font-size: 26px;
+    line-height: $grid-unit*4;
+    color: $color-black;
+    margin-top: 0;
+    margin-bottom: $grid-unit;
+    letter-spacing: 0.33px;
+
+    @media (min-width: $tablet) {
+        font-size: 30px;
+        line-height: $grid-unit*4;
+        letter-spacing: 0.38px;
+    }
+
+    @media (min-width: $desktop) {
+        font-size: 48px;
+        line-height: $grid-unit*6;
+        letter-spacing: 0.61px;
+        margin-bottom: $grid-unit*2;
+    }
+}
+
+h3, .h3 {
+    font-size: 20px;
+    line-height: $grid-unit*3;
+    color: $color-black;
+    margin-top: 0;
+    margin-bottom: $grid-unit;
+    letter-spacing: 0.25px;
+
+    @media (min-width: $tablet) {
+        font-size: 22px;
+        line-height: $grid-unit*4;
+        letter-spacing: 0.28px;
+    }
+
+    @media (min-width: $desktop) {
+        font-size: 34px;
+        line-height: $grid-unit*5;
+        letter-spacing: 0.43px;
+    }
+}
+
+h4, .h4 {
+    font-size: 18px;
+    line-height: $grid-unit*3;
+    color: $color-black;
+    margin-top: 0;
+    margin-bottom: $grid-unit;
+    letter-spacing: 0.23px;
+
+    @media (min-width: $tablet) {
+        font-size: 18px;
+        line-height: $grid-unit*3;
+    }
+
+    @media (min-width: $desktop) {
+        font-size: 22px;
+        line-height: $grid-unit*4;
+        letter-spacing: 0.28px;
+    }
+}
+
+h5, .h5 {
+    font-size: 16px;
+    line-height: $grid-unit*2;
+    color: $color-black;
+    margin-top: 0;
+    margin-bottom: $grid-unit;
+
+    @media (min-width: $tablet) {
+        font-size: 16px;
+        line-height: $grid-unit*3;
+        letter-spacing: 0.2px;
+    }
+
+    @media (min-width: $desktop) {
+        font-size: 18px;
+        line-height: $grid-unit*4;
+        letter-spacing: 0.23px;
+    }
+}
+
+h6, .h6 {
+    font-size: 14px;
+    line-height: $grid-unit*2;
+    color: $color-black;
+    margin-top: 0;
+    margin-bottom: $grid-unit;
+
+    @media (min-width: $desktop) {
+        line-height: $grid-unit*3;
+    }
+}
+
+.slogan {
+    font-family: $font-tertiary;
+    font-style: italic;
+    font-size: 20px;
+    color: $color-silver;
+    line-height: $grid-unit*3;
+    margin-bottom: $grid-unit;
+    letter-spacing: 0.25px;
+
+    @media (min-width: $desktop) {
+        font-size: 21px;
+        letter-spacing: 0.27px;
+    }
+}
+
+table {
+    border: none;
+    border-spacing: 0;
+    display: block;
+    overflow-x: scroll;
+
+    @media (min-width: $tablet) {
+        display: table;
+        overflow: hidden;
+    }
+
+    tr {
+        vertical-align: top;
+    }
+
+    thead {
+        font-family: $font-primary;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: $grid-unit*2;
+
+        td {
+            padding: $grid-unit  $grid-unit*3;
+            text-align: left;
+        }
+
+        tr td:first-of-type {
+            text-align: center;
+        }
+    }
+
+    tbody {
+
+        tr td:first-of-type {
+            text-align: center;
+        }
+
+        tr td {
+            padding: $grid-unit*2 $grid-unit*3;
+            max-width: 300px;
+        }
+
+        tr:nth-child(even) {
+            background: #FFF;
+        }
+
+        tr:nth-child(odd) {
+            background: $color-wildSand;
+        }
+    }
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
+    margin-bottom: $grid-unit*3;
+}
+
+ul:not([class]) {
+
+    li {
+        margin: 0;
+        margin-bottom: $grid-unit*3;
+        padding-left: $grid-unit*3;
+        position: relative;
+
+        &:last-of-type {
+            margin-bottom: 0;
+        }
+
+        &:after {
+            content: '';
+            height: 6px;
+            width: 6px;
+            background: $color-primary;
+            display: block;
+            position: absolute;
+            transform: rotate(45deg);
+            top: $grid-unit;
+            left: 0;
+        }
+    }
+}
+
+ol:not([class]) {
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
+    counter-reset: my-awesome-counter;
+    margin-bottom: $grid-unit*3;
+
+    li {
+        margin: 0;
+        margin-bottom: $grid-unit*3;
+        counter-increment: my-awesome-counter;
+        padding-left: $grid-unit*3;
+        position: relative;
+
+        &:last-of-type {
+            margin-bottom: 0;
+        }
+
+        &:before {
+            content: counter(my-awesome-counter) ". ";
+            position: absolute;
+            display: block;
+            left: 0;
+            top: 0;
+            font-family: $font-tertiary;
+            font-weight: 600;
+            letter-spacing: -0.32px;
+        }
+    }
+
+    ol {
+        margin-top: $grid-unit*2;
+        margin-bottom: $grid-unit*2;
+        margin-left: $grid-unit;
+        counter-reset: listStyle;
+
+        li {
+            margin: 0;
+            margin-bottom: $grid-unit*3;
+            counter-increment: listStyle;
+            padding-left: $grid-unit*3;
+            position: relative;
+
+            &:last-of-type {
+                margin-bottom: 0;
+            }
+
+            &:before {
+                content: counter(listStyle, lower-latin) ".";
+                position: absolute;
+                display: block;
+                left: 0;
+                top: 0;
+                font-family: $font-tertiary;
+                font-weight: 600;
+                letter-spacing: -0.32px;
+            }
+        }
+    }
+}
+
+p {
+    font-size: 14px;
+    margin: 0;
+    margin-bottom: $grid-unit;
+
+    &:last-of-type {
+        margin-bottom: 0;
+    }
+}
+
+a {
+    color: $color-limedOak;
+    line-height: 20px;
+    transition: $speed ease-in-out;
+
+    &:hover, &:focus {
+        color: $color-pottersClay;
+    }
+}
