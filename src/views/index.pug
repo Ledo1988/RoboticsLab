@@ -4,7 +4,14 @@ include helpers/mixins
 block variables
 	- const title = "Лаборатория робототехники"
 
+block header
+	include ../blocks/modules/header/header
+
 block content
+	include ../blocks/modules/main/main
+
+block footer
+	include ../blocks/modules/footer/footer
 
 block scripts
 	script(src="../js/main.js")

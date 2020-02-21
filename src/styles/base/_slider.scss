@@ -16,10 +16,7 @@
     height: 320px;
     width: 100%;
     position: static;
-    
-    @media (min-width: $desktop) {
-        height: 552px;
-    }
+
 }
 
 .swiper-container {
@@ -43,26 +40,6 @@
 
     img {
         width: 100%;
-    }
-}
-
-.swiper-pagination {
-    bottom: -36px !important;
-    text-align: left !important;
-    padding-left: $grid-unit*3 !important;
-
-
-.swiper-pagination-bullet {
-        height: 6px;
-        width: 6px;
-        background: $color-alto;
-        transform: rotate(45deg);
-        border-radius: 0;
-        opacity: 1;
-
-        &.swiper-pagination-bullet-active {
-            background-color: $color-limedOak;
-        }
     }
 }
 
@@ -108,19 +85,8 @@
         margin-right: $grid-unit*6;
         background-color: $color-white;
         border: 1px solid rgba(82, 82, 82, 0.25);
-        transition: $speed ease-in-out;
+        transition: $transition;
         cursor: pointer;
-
-        @media (min-width: $tablet) {
-            width: $grid-unit*5;
-            height: $grid-unit*5;
-            margin-right: $grid-unit*3;
-        }
-
-        @media (min-width: $desktop) {
-            width: $grid-unit*6;
-            height: $grid-unit*6;
-        }
 
         &:hover, &:focus {
             background-color: rgba(0, 0, 0, 0.08);
@@ -137,31 +103,6 @@
                 @include triangle(right, 8px, 8px, #525252);
             }
         }
-    }
-
-    &_inverse {
-
-        .slider-arrows__item {
-            border-color: rgba(255, 255, 255, 0.85);
-            background-color: transparent;
-
-            &:hover, &:focus {
-                background-color: rgba(255, 255, 255, 0.35);
-            }
-
-            &-prev {
-                &:after {
-                    @include triangle(left, 8px, 8px, rgba(255, 255, 255, 0.85));
-                }
-            }
-
-            &-next {
-                &:after {
-                    @include triangle(right, 8px, 8px, rgba(255, 255, 255, 0.85));
-                }
-            }
-        }
-
     }
 }
 

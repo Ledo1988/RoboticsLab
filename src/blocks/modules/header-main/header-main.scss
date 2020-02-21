@@ -1,0 +1,12 @@
+.header-main {
+    @include container;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &--wrapper {
+        padding-top: $grid-unit*2;
+        padding-bottom: $grid-unit*2;
+        background: $color-white;
+    }
+}

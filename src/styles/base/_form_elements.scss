@@ -47,7 +47,7 @@ textarea {
 
     &::placeholder {
         font: 14px $font-primary;
-        color: $color-silver;
+        color: $color-silverSand;
     }
 }
 
@@ -69,11 +69,11 @@ input {
     line-height: 1;
     background: #FFFFFF;
     color: $color-black;
-    border: 1px solid $color-alto;
-    transition: $speed ease-in-out;
+    border: 1px solid $color-selago;
+    transition: $transition;
 
     &:active, &:focus, &:hover {
-        border-color: $color-limedOak;
+        border-color: $color-primary;
         outline: none;
         box-shadow: none;
     }
@@ -90,7 +90,7 @@ input {
         font-size: 14px;
         line-height: $grid-unit*3;
         color: $color-black;
-        transition: $speed ease-in-out;
+        transition: $transition;
     }
 
     &_filled {
@@ -124,217 +124,13 @@ input {
     padding: $grid-unit*2;
 }
 
-.radio {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    margin-bottom: 15px;
-    line-height: 1;
-
-    &:last-of-type {
-        margin-bottom: 0;
-    }
-
-    input {
-        position: absolute;
-        width: 0;
-        height: 0;
-        opacity: 0;
-        pointer-events: none;
-        line-height: 1;
-
-        &:checked {
-            ~ label::before {
-                border: 2px solid $color-limedOak;
-            }
-
-            ~ label::after {
-                opacity: 1;
-            }
-        }
-
-        &:hover {
-            ~ label::before {
-                border: 2px solid $color-limedOak;
-            }
-        }
-    }
-
-    label {
-        display: flex;
-        align-items: center;
-        justify-content: flex-start;
-        position: relative;
-        cursor: pointer;
-        -webkit-touch-callout: none; /* iOS Safari */
-        -webkit-user-select: none; /* Safari */
-        -moz-user-select: none; /* Old versions of Firefox */
-        -ms-user-select: none; /* Internet Explorer/Edge */
-        user-select: none;
-        /* Non-prefixed version, currently
-                                         supported by Chrome, Opera and Firefox */
-
-        &:before {
-            content: '';
-            width: $grid-unit*2;
-            height: $grid-unit*2;
-            background: transparent;
-            border: 2px solid $color-SilverChalice;
-            border-radius: 50%;
-            margin-right: 10px;
-            transition: $speed ease-in-out;
-            flex-shrink: 0;
-
-            @media (min-width: $tablet) {
-                width: $grid-unit*3;
-                height: $grid-unit*3;
-            }
-
-            @media (min-width: $desktop) {
-                width: $grid-unit*4;
-                height: $grid-unit*4;
-            }
-        }
-
-        &::after {
-            content: "";
-            position: absolute;
-            left: 0;
-            top: 0;
-            width: $grid-unit*2;
-            height: $grid-unit*2;
-            border-radius: 50%;
-            border: 5px solid $color-white;
-            background-color: $color-limedOak;
-            transition: $speed ease-in-out;
-            opacity: 0;
-            z-index: -1;
-
-            @media (min-width: $tablet) {
-                width: $grid-unit*3;
-                height: $grid-unit*3;
-                border: 8px solid $color-white;
-            }
-
-            @media (min-width: $desktop) {
-                width: $grid-unit*4;
-                height: $grid-unit*4;
-                border: 10px solid $color-white;
-            }
-        }
-
-    }
-}
-
-.checkbox {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    margin-bottom: 15px;
-    line-height: 1;
-
-    text-align: left;
-
-    &:last-of-type {
-        margin-bottom: 0;
-    }
-
-    input {
-        position: absolute;
-        width: 0;
-        height: 0;
-        opacity: 0;
-        pointer-events: none;
-
-        &:checked {
-            ~ label::before {
-                border: 2px solid $color-limedOak;
-            }
-
-            ~ label::after {
-                opacity: 1;
-            }
-        }
-
-        &:hover {
-            ~ label::before {
-                border: 2px solid $color-limedOak;
-            }
-        }
-    }
-
-    label {
-        display: flex;
-        align-items: center;
-        justify-content: flex-start;
-        position: relative;
-        font-size: 12px;
-        line-height: $grid-unit*2;
-        letter-spacing: 0.15px;
-        color: $color_primary;
-        cursor: pointer;
-        -webkit-touch-callout: none; /* iOS Safari */
-        -webkit-user-select: none; /* Safari */
-        -moz-user-select: none; /* Old versions of Firefox */
-        -ms-user-select: none; /* Internet Explorer/Edge */
-        user-select: none;
-        /* Non-prefixed version, currently
-                                         supported by Chrome, Opera and Firefox */
-
-        &:before {
-            content: '';
-            width: $grid-unit*2;
-            height: $grid-unit*2;
-            background: #FFFFFF;
-            border: 2px solid $color-SilverChalice;
-            box-sizing: border-box;
-            margin-right: 10px;
-            transition: $speed ease-in-out;
-            flex-shrink: 0;
-
-            @media (min-width: $tablet) {
-                width: $grid-unit*3;
-                height: $grid-unit*3;
-            }
-            @media (min-width: $desktop) {
-                width: $grid-unit*4;
-                height: $grid-unit*4;
-            }
-        }
-
-        &::after {
-            content: "";
-            position: absolute;
-            left: 6px;
-            top: 3px;
-            @include tick(8px, 4px, 1px, $color-limedOak);
-            transition: $speed ease-in-out;
-            opacity: 0;
-
-            @media (min-width: $tablet) {
-                left: 9px;
-                top: 4px;
-                @include tick(13px, 6px, 2px, $color-limedOak);
-            }
-
-            @media (min-width: $desktop) {
-                left: 12px;
-                top: 4px;
-                @include tick(18px, 8px, 2px, $color-limedOak);
-            }
-        }
-
-    }
-
-}
-
 .close-link {
     position: absolute;
     display: block;
     width: $grid-unit*2;
     height: $grid-unit*2;
     font-size: 0;
-    transition: $speed ease-in-out;
+    transition: $transition;
     cursor: pointer;
 
     svg.icon {
@@ -347,13 +143,4 @@ input {
         }
     }
 
-    @media (min-width: $tablet) {
-        width: $grid-unit*3;
-        height: $grid-unit*3;
-    }
-
-    @media (min-width: $desktop) {
-        width: $grid-unit*4;
-        height: $grid-unit*4;
-    }
 }

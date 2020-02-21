@@ -1,0 +1,23 @@
+.header-main__nav {
+
+    &-list {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        font-size: 16px;
+        line-height: $grid-unit*3;
+    }
+  
+    &-item {
+        margin-left: $grid-unit*5;
+
+        &:first-of-type {
+            margin-left: 0;
+        }
+    }
+
+    &-link {
+        font-size: 16px;
+        line-height: $grid-unit*3;
+    }
+}

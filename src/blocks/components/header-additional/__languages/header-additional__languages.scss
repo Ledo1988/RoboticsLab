@@ -1,0 +1,25 @@
+.header-additional__languages {
+
+    &-link {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        color: $color-white;
+
+        &:hover, &:focus {
+            color: $color-white;
+        }
+    }
+
+    &-name {
+        font-family: $font-secondary;
+        font-weight: 600;
+        font-size: 12px;
+        line-height: $grid-unit*2;
+        margin-right: 12px;
+    }
+
+    img {
+        border-radius: 100%;
+    }
+}

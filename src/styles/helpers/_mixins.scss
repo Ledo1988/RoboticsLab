@@ -9,7 +9,11 @@
     padding: 0 $grid-unit*2;
     margin-right: auto;
     margin-left: auto;
-    max-width: 1408px;
+    max-width: 1954px;
+
+    @media (max-width: 1919px) and (min-width: $hd) {
+        max-width: 1408px;
+    }
 
     @media (max-width: $hd - 1px) and (min-width: $xl) {
        max-width: 1216px;
@@ -35,12 +39,15 @@
     margin-left: -$grid-unit*2;
 }
 
-
-
-
-
-
-
+@mixin noSelect {
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+}
 
 @mixin box($width, $height : $width) {
     width: $width;

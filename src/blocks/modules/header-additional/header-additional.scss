@@ -1,0 +1,12 @@
+.header-additional {
+    @include container;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &--wrapper {
+        padding-top: $grid-unit;
+        padding-bottom: $grid-unit;
+        background: linear-gradient(90deg, #3951e7 20.77%, #832ab9 91.64%);
+    }
+}

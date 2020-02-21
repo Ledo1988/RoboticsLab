@@ -1,0 +1,13 @@
+- var newsSrc;
+- var newsDate;
+- var newsDesc;
+
+.news-item
+	.news-item__img
+		img(src=newsSrc width="384" height="224" alt="Изображение")
+	.news-item__info
+		.news-item__date #{newsDate}
+		.news-item__social
+			a.news-item__social-link.news-item__social-link-vk(href="#")
+				span Вконтакте
+	.news-item__desc #{newsDesc}
