@@ -1,0 +1,89 @@
+.main-slider {
+    width: 100%;
+    height: auto;
+    padding-top: $grid-unit*13;
+    padding-bottom: $grid-unit*16.5;
+    background-image: url("/img/img/img_pattern-main.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-bottom: $grid-unit*10;
+
+    &__slide {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        justify-content: space-between;
+        height: 100%;
+    }
+
+    &__slide-container {
+        @include container-md;
+        color: $color-white;
+        text-align: left;
+    }
+
+    &__slide-title {
+        margin-bottom: $grid-unit*4;
+    }
+
+    &__slide-desc {
+        font-family: $font-secondary;
+        font-size: 18px;
+        line-height: $grid-unit*4;
+        color: $color-selago;
+        margin-bottom: $grid-unit*3;
+        max-width: 696px;
+    }
+
+    &__button {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        z-index: 2;
+        top: 192px;
+        width: 40px;
+        height: 40px;
+        border: 1px solid $color-white;
+        transition: $transition;
+        background-color: transparent;
+        border-radius: 100%;
+        cursor: pointer;
+
+        &.swiper-button-disabled {
+            opacity: 0.5;
+
+            &:hover, &:focus {
+                background-color: transparent;
+                border-color: $color-white;
+                outline: none;
+            }
+        }
+
+        &:hover, &:focus {
+            background-color: $color-razzmatazz;
+            border-color: $color-razzmatazz;
+            outline: none;
+        }
+
+        svg.icon {
+            width: 10px;
+            height: 16px;
+            fill: $color-white;
+        }
+    }
+
+    &__button-prev {
+        left: calc((100% - 1248px - 40px)/2 - 32px);
+    }
+
+    &__button-next {
+        right: calc((100% - 1248px - 40px)/2 - 32px);
+    }
+
+    &--wrapper {
+        height: 100%;
+    }
+}
