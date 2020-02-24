@@ -56,7 +56,7 @@ button[disabled] {
     cursor: default;
 }
 
-.label {
+label {
     position: relative;
     display: block;
 }
@@ -149,11 +149,4 @@ textarea {
     svg.icon {
         fill: $color-black;
     }
-
-    &:hover, &:focus {
-        svg.icon {
-            fill: #B39461;
-        }
-    }
-
 }
