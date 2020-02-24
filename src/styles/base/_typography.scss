@@ -18,6 +18,16 @@ h2, .h2 {
     margin-bottom: $grid-unit*3;
 }
 
+h3, .h3 {
+    font-family: $font-tertiary;
+    font-size: 32px;
+    font-weight: bold;
+    line-height: 38px;
+    letter-spacing: normal;
+    margin-top: 0;
+    margin-bottom: $grid-unit*3;
+}
+
 ul {
     list-style: none;
     margin: 0;
