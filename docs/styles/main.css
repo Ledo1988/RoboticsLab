@@ -1102,21 +1102,21 @@ button.swiper-pagination-bullet {
   font-family: "OpenSans-Regular";
   font-style: normal;
   font-weight: normal;
-  src: url("/fonts/OpenSans-Regular.woff2") format("woff2"), url("/fonts/OpenSans-Regular.woff") format("woff"), url("/fonts/OpenSans-Regular.ttf") format("truetype");
+  src: url("../fonts/OpenSans-Regular.woff2") format("woff2"), url("../fonts/OpenSans-Regular.woff") format("woff"), url("../fonts/OpenSans-Regular.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "OpenSans-Semibold";
   font-style: normal;
   font-weight: 600;
-  src: url("/fonts/OpenSans-Semibold.woff2") format("woff2"), url("/fonts/OpenSans-Semibold.woff") format("woff"), url("/fonts/OpenSans-Semibold.ttf") format("truetype");
+  src: url("../fonts/OpenSans-Semibold.woff2") format("woff2"), url("../fonts/OpenSans-Semibold.woff") format("woff"), url("../fonts/OpenSans-Semibold.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "Muller-Bold";
   font-style: normal;
   font-weight: bold;
-  src: url("/fonts/Muller-Bold.woff2") format("woff2"), url("/fonts/Muller-Bold.woff") format("woff"), url("/fonts/Muller-Bold.ttf") format("truetype");
+  src: url("../fonts/Muller-Bold.woff2") format("woff2"), url("../fonts/Muller-Bold.woff") format("woff"), url("../fonts/Muller-Bold.ttf") format("truetype");
 }
 
 * {
@@ -1991,7 +1991,7 @@ textarea::placeholder {
   height: auto;
   padding-top: 104px;
   padding-bottom: 132px;
-  background-image: url("/img/img/img_pattern-main.png");
+  background-image: url("../img/img/img_pattern-main.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
