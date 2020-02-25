@@ -4,6 +4,14 @@
     align-items: center;
     justify-content: space-between;
 
+    .burger-menu {
+        display: none;
+
+        @media (max-width: 768px) {
+            display: block;
+        }
+    }
+
     &--wrapper {
         padding-top: $grid-unit*2;
         padding-bottom: $grid-unit*2;

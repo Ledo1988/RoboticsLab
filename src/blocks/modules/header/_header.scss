@@ -1,0 +1,21 @@
+.header {
+
+  &__mobile-open {
+    @media (max-width: 768px) {
+      position: fixed;
+      background: #003e96;
+      z-index: 3;
+
+      .header-main__nav {
+          position: absolute;
+          display: block;
+          top: 100%;
+          right: 0;
+          left: 0;
+          padding: 16px;
+          height: calc(100vh - 64px);
+          background: #0049b0;
+      }
+    }
+  }
+}
