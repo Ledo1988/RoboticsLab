@@ -4,6 +4,10 @@
     align-items: flex-start;
     justify-content: space-between;
 
+    @media (max-width: 768px) {
+        flex-direction: column;
+    }
+
     &--wrapper {
         padding-top: $grid-unit*4;
         padding-bottom: $grid-unit*3;

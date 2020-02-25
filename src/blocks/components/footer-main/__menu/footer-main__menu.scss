@@ -2,12 +2,24 @@
     flex-shrink: 0;
     margin: 0 auto;
 
+    @media (max-width: 768px) {
+        margin-right: 0;
+        margin-left: 0;
+        margin-bottom: $grid-unit*2;
+    }
+
     &-list {
         width: $grid-unit*24*2;
         -moz-column-count: 2;
         column-count: 2;
         column-gap: $grid-unit*4;
         break-inside: avoid-column;
+
+        @media (max-width: 768px) {
+            width: 100%;
+            -moz-column-count: 1;
+            column-count: 1;
+        }
     }
 
     &-link {

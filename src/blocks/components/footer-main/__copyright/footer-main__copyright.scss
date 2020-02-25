@@ -9,5 +9,9 @@
         color: #ffffff;
         mix-blend-mode: normal;
         opacity: 0.5;
+
+        @media (max-width: 768px) {
+            margin-bottom: $grid-unit*2;
+        }
     }
 }

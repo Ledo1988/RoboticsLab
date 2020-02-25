@@ -9,6 +9,11 @@
     background-size: cover;
     margin-bottom: $grid-unit*10;
 
+    @media (max-width: 768px) {
+        padding: 40px 0;
+        margin-bottom: 40px;
+    }
+
     &__slide {
         display: flex;
         flex-direction: column;
@@ -25,6 +30,10 @@
 
     &__slide-title {
         margin-bottom: $grid-unit*4;
+
+        @media (max-width: 768px) {
+            margin-bottom: $grid-unit*3;
+        }
     }
 
     &__slide-desc {
@@ -35,6 +44,12 @@
         color: $color-selago;
         margin-bottom: $grid-unit*3;
         max-width: 696px;
+
+        @media (max-width: 768px) {
+            font-size: 16px;
+            line-height: 24px;
+            font-family: $font-primary;
+        }
     }
 
     &__button {
@@ -52,6 +67,10 @@
         background-color: transparent;
         border-radius: 100%;
         cursor: pointer;
+
+        @media (max-width: 768px) {
+            display: none;
+        }
 
         &.swiper-button-disabled {
             opacity: 0.5;

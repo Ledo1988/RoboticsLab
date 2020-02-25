@@ -85,6 +85,10 @@ input {
 .input--wrapper {
     margin-bottom: $grid-unit*3;
 
+    @media (max-width:768px) {
+        margin-bottom: 16px;
+    }
+
     label {
         display: block;
         font-family: $font-secondary;

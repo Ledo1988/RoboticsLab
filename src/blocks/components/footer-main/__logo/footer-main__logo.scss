@@ -3,6 +3,10 @@
     height: 32px;
     margin-bottom: $grid-unit*3;
 
+    @media (max-width: 768px) {
+        width: 288px;
+    }
+
     &-link {
         display: block;
         line-height: 1;

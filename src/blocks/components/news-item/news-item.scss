@@ -15,6 +15,10 @@
         border-radius: 16px 16px 0 0;
         overflow: hidden;
 
+        @media (max-width: 768px) {
+            height: 168px;
+        }
+
         img {
             width: 100%;
             height: auto;
@@ -22,6 +26,10 @@
     }
     &__content {
         padding: $grid-unit*4;
+
+        @media (max-width: 768px) {
+            padding: $grid-unit*2;
+        }
     }
 
     &__info {
