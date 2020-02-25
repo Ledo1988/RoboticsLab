@@ -85,7 +85,7 @@ input {
 .input--wrapper {
     margin-bottom: $grid-unit*3;
 
-    @media (max-width:768px) {
+    @media (max-width:375px) {
         margin-bottom: 16px;
     }
 

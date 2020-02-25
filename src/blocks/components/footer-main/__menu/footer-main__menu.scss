@@ -2,7 +2,7 @@
     flex-shrink: 0;
     margin: 0 auto;
 
-    @media (max-width: 768px) {
+    @media (max-width: 375px) {
         margin-right: 0;
         margin-left: 0;
         margin-bottom: $grid-unit*2;
@@ -15,7 +15,7 @@
         column-gap: $grid-unit*4;
         break-inside: avoid-column;
 
-        @media (max-width: 768px) {
+        @media (max-width: 375px) {
             width: 100%;
             -moz-column-count: 1;
             column-count: 1;

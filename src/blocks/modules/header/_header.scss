@@ -1,5 +1,5 @@
 .header {
-  @media (max-width: 768px) {
+  @media (max-width: 375px) {
     width: 100%;
     position: fixed;
     z-index: 3;
@@ -7,7 +7,7 @@
   }
 
   &__mobile-open {
-    @media (max-width: 768px) {
+    @media (max-width: 375px) {
       background: #003e96;
 
       .header-main__nav {

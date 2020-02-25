@@ -1,6 +1,6 @@
 .header-main__nav {
 
-    @media (max-width: 768px) {
+    @media (max-width: 375px) {
         display: none;
     }
 
@@ -24,7 +24,7 @@
             margin-left: 0;
         }
 
-        @media (max-width: 768px) {
+        @media (max-width: 375px) {
             color: $color-white;
             margin-left: 0;
         }
@@ -38,7 +38,7 @@
             color: $color-black;
         }
 
-        @media (max-width: 768px) {
+        @media (max-width: 375px) {
             display: block;
             font-family: $font-secondary;
             font-weight: 600;

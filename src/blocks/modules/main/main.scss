@@ -1,7 +1,7 @@
 .main {
     @include container-fluid;
 
-    @media (max-width: 768px) {
+    @media (max-width: 375px) {
         padding-top: 104px;
     }
 }

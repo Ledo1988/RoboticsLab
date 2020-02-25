@@ -15,7 +15,7 @@
         border-radius: 16px 16px 0 0;
         overflow: hidden;
 
-        @media (max-width: 768px) {
+        @media (max-width: 375px) {
             height: 168px;
         }
 
@@ -27,7 +27,7 @@
     &__content {
         padding: $grid-unit*4;
 
-        @media (max-width: 768px) {
+        @media (max-width: 375px) {
             padding: $grid-unit*2;
         }
     }

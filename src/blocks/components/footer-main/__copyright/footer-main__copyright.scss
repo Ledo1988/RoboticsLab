@@ -10,7 +10,7 @@
         mix-blend-mode: normal;
         opacity: 0.5;
 
-        @media (max-width: 768px) {
+        @media (max-width: 375px) {
             margin-bottom: $grid-unit*2;
         }
     }

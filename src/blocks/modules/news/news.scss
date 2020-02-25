@@ -14,7 +14,7 @@
         @include container-md;
         margin-bottom: $grid-unit*10;
 
-        @media (max-width: 768px) {
+        @media (max-width: 375px) {
             margin-bottom: 40px;
         }
     }
